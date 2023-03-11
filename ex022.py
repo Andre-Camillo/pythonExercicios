@@ -1,0 +1,7 @@
+print('DISSECAOR DE NOMES')
+nome = str(input('Digite seu nome completo: ')).strip()
+print('Olá Sr.(a) {}!'.format(' '.join(nome.title().split())))
+print('Seu nome em maiúsculas: {}'.format(' '.join(nome.upper().split())))
+print('Seu nome em minúsculas: {}'.format(' '.join(nome.lower().split())))
+print('Seu nome tem ao todo: {} letras, sem os espaços'.format(len(nome) - nome.count(' ')))
+print('Seu primeiro nome tem: {} letras'.format(len(nome.split()[0])))
