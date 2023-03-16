@@ -1,21 +1,22 @@
-from emoji import emojize
-from random import randint
-cont = 1
-comp = randint(0, 10)
-user = int(input('ESCOLHA UM NÚMERO ENTRE "0 E 10": '))
-while comp != user:
-    if comp > user:
-        user = int(input('UM POUCO MAIS ACIMA: '))
-    if comp < user:
-        user = int(input('UM POUCO MAIS ABAIXO: '))
-    if comp == user:
-        print('PARABÉNS, VOCÊ ACERTOU!!! {}{}\nO NÚMERO ESCOLHI FOI O {}.'.format(emojize(":thumbs_up:"), emojize(":thumbs_up:"), comp))
-    cont += 1
-#if comp == user:
-#    print('PARABÉNS, VOCÊ ACERTOU!!! {}{}'.format(emojize(":thumbs_up:"), emojize(":thumbs_up:")))
-#else:
-#    print('AHHH, QUE PENA!!! VOCÊ ERROU, TENTE NOCVAMENTE{}{}.'
-#          .format(emojize(":sad_but_relieved_face:"), emojize(":sad_but_relieved_face:")))
-print('FORAM AO TODO {} TENTATIVAS.'.format(cont))
-print('FIM')
+cont_idade = 0
+nomeMaisVelho = ''
+maiorIdadeHomem = 0
+mulher = 0
+for c in range(1, 5):
+    nome = str(input('INFORME O NOME DA {}ª PESSOA: '.format(c)))
+    idade = int(input('INFORME A IDADE DA {}ª PESOOA: '.format(c)))
+    sexo = str(input('INOFRME O SEXO DA {}ª PESSOA [M] ou [F]: '.format(c)))
+    print('=' * 45)
+    cont_idade += idade
+    if c == 1 and sexo in "Mm":
+        maiorIdadeHomem = idade
+        nomeMaisVelho = nome
+    if sexo in "Mm" and idade > maiorIdadeHomem:
+        maiorIdadeHomem = idade
+        nomeMaisVelho = nome
+    if sexo in "Ff" and idade < 20:
+        mulher += 1
+print('A media de idade do grupo é de: {} anos.'.format(cont_idade / 4))
+print('O homem mais velho tem {} anos e chama-se: {}'.format(maiorIdadeHomem, nomeMaisVelho))
+print('Ao todo temos {} mulher(es) abaixo de 20 anos'.format(mulher))
 
