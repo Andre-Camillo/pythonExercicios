@@ -1,16 +1,7 @@
 v1 = int(input('INFORME O 1° VALOR: '))
 v2 = int(input('INFORME O 2° VALOR: '))
 num = 0
-soma = 0
-subt = 0
-divid = 0
-mult = 0
-raizv1 = 0
-raizv2 = 0
-hipot = 0
 maior = 0
-circ1 = 0
-circ2 = 0
 while num != 10:
     num = int(input('''OPÇÕES
 [ 1 ] - SOMAR
