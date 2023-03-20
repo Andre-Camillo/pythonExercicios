@@ -1,16 +1,7 @@
-print('*' * 26)
-print('* SEQUÊNCIA DE FIBONACCI *')
-print('*' * 26)
-num = int(input('INFORME A QUANTIDADE DE TERMOS: '))
-t1 = 1
-t2 = 1
-print('{} - {}'.format(t1, t2), end='')
-cont = 3
-while cont <= num:
-    t3 = t1 + t2
-    print(' - {}' .format(t3), end='')
-    t1 = t2
-    t2 = t3
-    cont += 1
-print(' - Fim...')
+a = float(input('INFORME O 1° VALOR: '))
+b = float(input('INFORME O 2° VALOR: '))
+c = float(input('INFORME O 3° VALOR: '))
+result = a ** 2 * 5 - c / (b - a % 4)
+print(result)
 
+# A² * 5 – C / (B – A % 4)
