@@ -12,5 +12,5 @@ while resp in 'Ss':
         if num < menor:
             menor = num
     resp = str(input('Deseja continuar [S] ou [N]: ')).strip()
-print('Ao todo foram digitados: {} valores.\nTotalizando: {}.\nA media aritmética foi de: {}.\nO maior: {}.\nO menor: {}. Fim...'
+print('Ao todo foram digitados: {} valores.\nTotalizando: {}.\nA media aritmética foi de: {}.\nO maior: {}.\nO menor: {}.\nFim...'
       ''.format(quant, soma, soma / quant, maior, menor))
