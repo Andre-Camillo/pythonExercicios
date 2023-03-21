@@ -2,8 +2,8 @@ print('+' * 22)
 print('+ CONTADOR E SOMADOR +')
 print('+' * 22)
 num = 0
-cont = 0
-soma = 0
+cont = - 1
+soma = - 999
 while num != 999:
     num = int(input('DIGITE UM NÚMERO: '))
     cont += 1
