@@ -5,7 +5,7 @@ print('========== PAR OU IMPAR ==========\n')
 nome = str(input('INFORME SEU NOME: ')).strip().upper()
 win = 0
 while True:
-    comput = randint(0, 0)
+    comput = randint(0, 10)
     escolha = str(input('ESCOLHA "PAR" ou "IMPAR" [P] ou [I]": ')).strip()
     while escolha not in 'PpIi':
         escolha = str(input('VOCÊ DEVE ESCOLHER "PAR" ou "IMPAR" [P] ou [I]": ')).strip()
