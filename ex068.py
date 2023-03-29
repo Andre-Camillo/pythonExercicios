@@ -2,11 +2,11 @@ from random import randint
 from emoji import emojize
 color = {"clear": "\033[m", "red": "\033[1;31m", "green": "\033[1;32m", "cyan": "\033[1;36m", "purple": "\033[1;35m", "<B>": "\033[1m"}
 print('========== PAR OU IMPAR ==========\n')
-nome = str(input('INFORME SEU NOME: ')).strip().upper()
+nome = str(input("WHAT'S NAME: ")).strip().upper()
 win = cont = 0
 while True:
     comput = randint(0, 10)
-    escolha = str(input('ESCOLHA "PAR" ou "IMPAR" [P] ou [I]": ')).strip()[0]
+    escolha = str(input('CHOOSE "PAR" ou "IMPAR" [P] ou [I]: ')).strip()[0]
     while escolha not in 'PpIi':
         escolha = str(input('VOCÊ DEVE ESCOLHER "PAR" ou "IMPAR" [P] ou [I]": ')).strip()
     user = int(input('DIGITE UM NÚMERO: '))
