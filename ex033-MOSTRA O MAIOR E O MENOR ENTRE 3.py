@@ -1,4 +1,5 @@
 print('MOSTRA O MAIOR E O MENOR ENTRE "3"')
+maior = menor =0
 v1 = int(input('Digite o 1° valor: '))
 v2 = int(input('Digite o 2° valor: '))
 v3 = int(input('Digite o 3° valor: '))

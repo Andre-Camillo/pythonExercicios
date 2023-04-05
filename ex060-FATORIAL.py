@@ -1,3 +1,4 @@
+print('FATORIAL')
 from math import factorial
 num = int(input('INFORME UM NÚMERO PARA SABER SEU FATORIAL: '))
 for c in range(num, 0, -1):

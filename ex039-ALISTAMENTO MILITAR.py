@@ -1,3 +1,4 @@
+print('ALISTAMENTO MILITAR')
 from datetime import date
 ano_atual = date.today().year
 ano_nasc = int(input('Informe o ano em que você nasceu: '))

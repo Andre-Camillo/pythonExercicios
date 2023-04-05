@@ -1,3 +1,4 @@
+print('JOKENPO')
 from emoji import emojize
 from time import sleep
 from random import randint

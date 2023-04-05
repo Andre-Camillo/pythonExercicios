@@ -1,5 +1,5 @@
-from math import hypot
 print('CALCULADORA DE HIPOTENUSA')
+from math import hypot
 catop = float(input('Digite o valor do cateto oposto: '))
 catadj = float(input('Digite o valor do cateto adjacente: '))
 print('''O cateto oposto mede: {}.

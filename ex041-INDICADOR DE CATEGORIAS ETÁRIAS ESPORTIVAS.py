@@ -1,5 +1,5 @@
+print('INDICADOR DE CATEGORIAS ETÁRIAS ESPORTIVAS')
 from datetime import date
-print('INDICADOR DE CATEGORIAS')
 color = {'clear': '\033[m', 'red': '\033[1;31m', 'green': '\033[1;32m', 'yellow': '\033[1;33m', 'purple': '\033[1;35m', 'cyan': '\033[1;36m'}
 ano_atual = date.today().year
 ano_nasc = int(input('Informe seu ano de nascimento: '))

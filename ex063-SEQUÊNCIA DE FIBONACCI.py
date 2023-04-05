@@ -1,4 +1,5 @@
-rint('*' * 26)
+print('SEQUÊNCIA DE FIBONACCI')
+print('*' * 26)
 print('* SEQUÊNCIA DE FIBONACCI *')
 print('*' * 26)
 num = int(input('INFORME A QUANTIDADE DE TERMOS: '))

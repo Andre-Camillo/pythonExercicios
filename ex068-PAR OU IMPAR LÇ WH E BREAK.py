@@ -1,3 +1,4 @@
+print('PAR OU IMPAR LÇ WH E BREAK')
 from random import randint
 from emoji import emojize
 color = {"clear": "\033[m", "red": "\033[1;31m", "green": "\033[1;32m", "cyan": "\033[1;36m", "purple": "\033[1;35m", "<B>": "\033[1m"}

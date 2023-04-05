@@ -1,3 +1,4 @@
+print('MEDIA-HOMEM VELHO-MULHER ABAIXO DE 20')
 cont_idade = 0
 nomeMaisVelho = ''
 maiorIdadeHomem = 0

@@ -1,5 +1,5 @@
-import emoji
 print('APROVAÇÃO DE EMPRÉSTIMO BANCÁRIO')
+import emoji
 vl_imovel = float(input('Informe o valor do imóvel: R$ '))
 salario = float(input('Informe o valor do seu salário: R$ '))
 prazo = float(input('Informe em anos, o prazo de quitação: '))

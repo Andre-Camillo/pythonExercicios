@@ -1,6 +1,6 @@
+print('JOGO DE ADIVINHA')
 import emoji
 from random import randint
-print('JOGO DE ADIVINHA')
 num = int(input('Escolha um número entre 0 e 5: '))
 pc = randint(0, 5)
 print('Você escolheu  número: {}'.format(num))

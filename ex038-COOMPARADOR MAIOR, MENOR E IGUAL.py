@@ -1,4 +1,4 @@
-print('COOMPARADOR NUMÉRICO')
+print('COOMPARADOR MAIOR, MENOR E IGUAL')
 n1 = int(input('Digite o primeiro número inteiro: '))
 n2 = int(input('Digite o primeiro segundo inteiro: '))
 if n1 > n2:

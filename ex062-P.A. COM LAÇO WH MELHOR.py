@@ -1,3 +1,4 @@
+print('P.A. COM LAÇO WH MELHOR')
 from time import sleep
 prim = int(input('INFORME O 1° TERMO: '))
 raz = int(input('INFORME A RAZÃO: '))

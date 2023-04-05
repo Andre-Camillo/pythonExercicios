@@ -1,3 +1,4 @@
+print('SEXUALIDADE')
 #MÉTODO ENXUTO
 #sex = str(input('INFORME SEU SEXO: ')).strip()[0]
 #while sex not in 'MmFf':

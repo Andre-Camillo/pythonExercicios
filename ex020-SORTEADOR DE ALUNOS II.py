@@ -1,4 +1,4 @@
-print('SORTEADOR DE ALUNOS')
+print('SORTEADOR DE ALUNOS 2')
 from random import choice
 for alunos in range(1, 5):
     str(input('Informe o nome do {}° aluno: '.format(alunos)))

@@ -1,3 +1,4 @@
+print('CONTA SOMA COM LÇ WH BREAK 999')
 soma = cont = num = 0
 while num != 999:
     num = int(input('DIGITE UM VALOR: '))

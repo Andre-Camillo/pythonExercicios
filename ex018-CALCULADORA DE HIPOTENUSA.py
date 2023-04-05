@@ -1,5 +1,5 @@
-from math import radians, sin, cos, tan
 print('SENO, COSSENO E TANGENTE')
+from math import radians, sin, cos, tan
 ang = float(input('''Digite um ângulo: '''))
 seno = sin(radians(ang))
 cosseno = cos(radians(ang))

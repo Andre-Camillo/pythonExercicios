@@ -1,3 +1,4 @@
+print('P.A. COM LAÇO WH')
 prim = int(input('INFORME O 1° TERMO: '))
 raz = int(input('INFORME A RAZÃO: '))
 termo = prim

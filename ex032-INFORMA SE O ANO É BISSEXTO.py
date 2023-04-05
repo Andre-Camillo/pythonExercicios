@@ -1,5 +1,5 @@
-from datetime import date
 print('INFORMA SE O ANO É BISSEXTO')
+from datetime import date
 ano = int(input('''Coloque "0" para analizar o ano atual ou
 Digite o ano para saber se ele é Bissexto: '''))
 if ano == 0:

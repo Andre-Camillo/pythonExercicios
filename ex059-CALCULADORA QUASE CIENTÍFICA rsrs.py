@@ -1,3 +1,4 @@
+print('CALCULADORA')
 v1 = int(input('INFORME O 1° VALOR: '))
 v2 = int(input('INFORME O 2° VALOR: '))
 num = 0

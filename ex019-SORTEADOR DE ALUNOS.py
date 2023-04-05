@@ -1,5 +1,5 @@
-import random
 print('SORTEADOR DE ALUNOS')
+import random
 n1 = str(input('Informe o nome do 1º aluno: '))
 n2 = str(input('Informe o nome do 2º aluno: '))
 n3 = str(input('Informe o nome do 3º aluno: '))

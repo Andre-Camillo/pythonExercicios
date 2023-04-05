@@ -1,3 +1,4 @@
+print('MEDIA COM LAÇO WH E CONFIRMAÇÃO')
 quant = num = soma = maior = menor = 0
 resp = 's'
 while resp in 'Ss':

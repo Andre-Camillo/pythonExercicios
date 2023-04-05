@@ -1,3 +1,4 @@
+print('JOGO DO ADIVINHA COM LAÇO')
 from emoji import emojize
 from random import randint
 cont = 1
