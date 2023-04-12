@@ -1,5 +1,4 @@
 print('TABUADA COM LÇ WH BREAK < 0')
-num = 0
 while True:
     num = int(input('Digite um valor: '))
     if num < 0:

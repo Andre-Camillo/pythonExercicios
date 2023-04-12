@@ -1,11 +1,12 @@
 print('CONTA SOMA COM LÇ WH BREAK 999')
-soma = cont = num = 0
-while num != 999:
-    num = int(input('DIGITE UM VALOR: '))
+cont = soma = 0
+while True:
+    num = int(input('Informe um valor: '))
     if num == 999:
         break
-    cont += 1
-    soma += num
+    else:
+       soma += num
+       cont += 1
 print(f'''Ao todo foram digitados {cont} números. 
 A soma dos valores equivale a: {soma}.''')
 
