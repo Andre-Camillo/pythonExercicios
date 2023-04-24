@@ -38,18 +38,18 @@ while opc != 0:
 ESCOLHA SUA OPÇÃO: """))
     print('')
     if opc == 1:
-        menuLanche = int(input(f'''{emojize(':hamburger:')*18}
+        menuLanche = int(input(f"""{emojize(':hamburger:')*18}
 {emojize(':hamburger:')*5}   {colors['bold']}MENU LANCHES{colors['clear']}  {emojize(':hamburger:')*6}
 {emojize(':hamburger:')*18}
-{emojize(f':hamburger:')*5}   {colors['green']}1) - X-TUDO{colors['clear']}   {emojize(':hamburger:')*6}
-{emojize(f':hamburger:')*5}   {colors['yellow']}2) - X-EGG{colors['clear']}    {emojize(':hamburger:')*6}
-{emojize(f':hamburger:')*5}   {colors['cyan']}3) - X-SALADA{colors['clear']} {emojize(':hamburger:')*6}
-{emojize(f':hamburger:')*5}   {colors['purple']}4) - BAURÚ{colors['clear']}    {emojize(':hamburger:')*6}
-{emojize(f':hamburger:')*5}   {colors['red']}0) - VOLTAR{colors['clear']}   {emojize(':hamburger:')*6}
+{emojize(f':hamburger:')*3}   {colors['green']}1) - X-TUDO    R$ {vlxTudo:.2f}{colors['clear']}   {emojize(':hamburger:')*3}
+{emojize(f':hamburger:')*3}   {colors['yellow']}2) - X-EGG     R$  {vlxEgg:.2f}{colors['clear']}   {emojize(':hamburger:')*3}
+{emojize(f':hamburger:')*3}   {colors['cyan']}3) - X-SALADA  R$  {vlxSalada:.2f}{colors['clear']}   {emojize(':hamburger:')*3}
+{emojize(f':hamburger:')*3}   {colors['purple']}4) - BAURÚ     R$  {vlBauru:.2f}{colors['clear']}   {emojize(':hamburger:')*3}
+{emojize(f':hamburger:')*3}   {colors['red']}0) - VOLTAR    {colors['clear']}           {emojize(':hamburger:')*3}
 {emojize(f':hamburger:')*18}
 {emojize(f':hamburger:')*18}
 
-ESCOLHA SEU LANCHE: '''))
+ESCOLHA SEU LANCHE: """))
         if menuLanche == 1:
             print(f"ESCOLHEU {colors['green']}X-TUDO{colors['clear']} {emojize(':hamburger:')}")
             print('')
@@ -70,16 +70,16 @@ ESCOLHA SEU LANCHE: '''))
             print('')
             quantBauru = int(input('ESCOLHA A QUANTIDADE: '))
             contBauru += quantBauru
-
     if opc == 2:
         menuBebidas = int(input(f"""{emojize(':cup_with_straw:')*21}
 {emojize(':cup_with_straw:')*6}   {colors['bold']}MENU BEBIDAS{colors['clear']}  {emojize(':cup_with_straw:')*7}
 {emojize(':cup_with_straw:')*21}
-{emojize(f':cup_with_straw:')*6}   {colors['green']}1) - COCA-COLA{colors['clear']}  {emojize(':cup_with_straw:')*6}
-{emojize(f':cup_with_straw:')*6}   {colors['cyan']}2) - GUARANÁ{colors['clear']}    {emojize(':cup_with_straw:')*6}
-{emojize(f':cup_with_straw:')*6}   {colors['yellow']}3) - FANTA{colors['clear']}      {emojize(':cup_with_straw:')*6}
-{emojize(f':cup_with_straw:')*6}   {colors['purple']}4) - TUBAÍNA{colors['clear']}    {emojize(':cup_with_straw:')*6}
-{emojize(':cup_with_straw:')*6}   {colors['red']}0) - VOLTAR{colors['clear']}     {emojize(':cup_with_straw:')*6}
+{emojize(f':cup_with_straw:')*3}   {colors['green']}1) - COCA-COLA  R$ {vlCoca:.2f}{colors['clear']}      {emojize(':cup_with_straw:')*3}
+{emojize(f':cup_with_straw:')*3}   {colors['cyan']}2) - GUARANÁ    R$ {vlGuarana:.2f}{colors['clear']}      {emojize(':cup_with_straw:')*3}
+{emojize(f':cup_with_straw:')*3}   {colors['yellow']}3) - FANTA      R$ {vlFanta:.2f}{colors['clear']}      {emojize(':cup_with_straw:')*3}
+{emojize(f':cup_with_straw:')*3}   {colors['purple']}4) - TUBAÍNA    R$ {vlTubaina:.2f}{colors['clear']}      {emojize(':cup_with_straw:')*3}
+{emojize(':cup_with_straw:')*3}   {colors['red']}0) - VOLTAR{colors['clear']}                  {emojize(':cup_with_straw:')*3}
+{emojize(':cup_with_straw:')*21}
 {emojize(':cup_with_straw:')*21}
 
 ESCOLHA SUA BEBIDA: """))
@@ -103,7 +103,6 @@ ESCOLHA SUA BEBIDA: """))
             print('')
             quantTubaina = int(input('ESCOLHA A QUANTIDADE: '))
             contTubaina += quantTubaina
-
     if quantxTudo or quantxEgg or quantxSalada or quantBauru or quantCoca or quantGuarana or quantFanta or quantTubaina > 0:
         print('')
         print('=' * 44)
@@ -141,7 +140,6 @@ ESCOLHA SUA BEBIDA: """))
         fin = str(input('''SEU PEDIDO ESTÁ COMPLETO?
     S - PARA SIM
     N - PARA NÃO: '''))
-
         if fin[0] in 'sS':
             print(f"{colors['green']}PROCESSANDO{colors['clear']}", end='')
             sleep(.5)
