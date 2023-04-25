@@ -41,11 +41,11 @@ ESCOLHA SUA OPÇÃO: """))
         menuLanche = int(input(f"""{emojize(':hamburger:')*18}
 {emojize(':hamburger:')*5}   {colors['bold']}MENU LANCHES{colors['clear']}  {emojize(':hamburger:')*6}
 {emojize(':hamburger:')*18}
-{emojize(f':hamburger:')*3}   {colors['green']}1) - X-TUDO    R$ {vlxTudo:.2f}{colors['clear']}   {emojize(':hamburger:')*3}
-{emojize(f':hamburger:')*3}   {colors['yellow']}2) - X-EGG     R$  {vlxEgg:.2f}{colors['clear']}   {emojize(':hamburger:')*3}
-{emojize(f':hamburger:')*3}   {colors['cyan']}3) - X-SALADA  R$  {vlxSalada:.2f}{colors['clear']}   {emojize(':hamburger:')*3}
-{emojize(f':hamburger:')*3}   {colors['purple']}4) - BAURÚ     R$  {vlBauru:.2f}{colors['clear']}   {emojize(':hamburger:')*3}
-{emojize(f':hamburger:')*3}   {colors['red']}0) - VOLTAR    {colors['clear']}           {emojize(':hamburger:')*3}
+{emojize(f':hamburger:')*3}   1) - X-TUDO    R$ {vlxTudo:.2f}   {emojize(':hamburger:')*3}
+{emojize(f':hamburger:')*3}   2) - X-EGG     R$  {vlxEgg:.2f}   {emojize(':hamburger:')*3}
+{emojize(f':hamburger:')*3}   3) - X-SALADA  R$  {vlxSalada:.2f}   {emojize(':hamburger:')*3}
+{emojize(f':hamburger:')*3}   4) - BAURÚ     R$  {vlBauru:.2f}   {emojize(':hamburger:')*3}
+{emojize(f':hamburger:')*3}   0) - VOLTAR               {emojize(':hamburger:')*3}
 {emojize(f':hamburger:')*18}
 {emojize(f':hamburger:')*18}
 
@@ -74,11 +74,11 @@ ESCOLHA SEU LANCHE: """))
         menuBebidas = int(input(f"""{emojize(':cup_with_straw:')*21}
 {emojize(':cup_with_straw:')*6}   {colors['bold']}MENU BEBIDAS{colors['clear']}  {emojize(':cup_with_straw:')*7}
 {emojize(':cup_with_straw:')*21}
-{emojize(f':cup_with_straw:')*3}   {colors['green']}1) - COCA-COLA  R$ {vlCoca:.2f}{colors['clear']}      {emojize(':cup_with_straw:')*3}
-{emojize(f':cup_with_straw:')*3}   {colors['cyan']}2) - GUARANÁ    R$ {vlGuarana:.2f}{colors['clear']}      {emojize(':cup_with_straw:')*3}
-{emojize(f':cup_with_straw:')*3}   {colors['yellow']}3) - FANTA      R$ {vlFanta:.2f}{colors['clear']}      {emojize(':cup_with_straw:')*3}
-{emojize(f':cup_with_straw:')*3}   {colors['purple']}4) - TUBAÍNA    R$ {vlTubaina:.2f}{colors['clear']}      {emojize(':cup_with_straw:')*3}
-{emojize(':cup_with_straw:')*3}   {colors['red']}0) - VOLTAR{colors['clear']}                  {emojize(':cup_with_straw:')*3}
+{emojize(f':cup_with_straw:')*3}   1) - COCA-COLA  R$ {vlCoca:.2f}      {emojize(':cup_with_straw:')*3}
+{emojize(f':cup_with_straw:')*3}   2) - GUARANÁ    R$ {vlGuarana:.2f}      {emojize(':cup_with_straw:')*3}
+{emojize(f':cup_with_straw:')*3}   3) - FANTA      R$ {vlFanta:.2f}      {emojize(':cup_with_straw:')*3}
+{emojize(f':cup_with_straw:')*3}   4) - TUBAÍNA    R$ {vlTubaina:.2f}      {emojize(':cup_with_straw:')*3}
+{emojize(':cup_with_straw:')*3}   0) - VOLTAR                  {emojize(':cup_with_straw:')*3}
 {emojize(':cup_with_straw:')*21}
 {emojize(':cup_with_straw:')*21}
 
@@ -108,33 +108,35 @@ ESCOLHA SUA BEBIDA: """))
         print('=' * 44)
         print(f"{' ' * 19}PEDIDO")
         print('-' * 44)
+        print("QTD | PRODUTO  |   VL UNIT.  |    VL TOTAL")
+        print('-' * 44)
         if quantxTudo > 0:
-            print(f"{contxTudo} - {colors['green']}X-TUDO{colors['clear']}      UNI R$ {vlxTudo:.2f} - TOT R$ {contxTudo * vlxTudo:.2f}")
+            print(f" {contxTudo} - {colors['green']}X-TUDO{colors['clear']}       R$ {vlxTudo:.2f}        R$ {contxTudo * vlxTudo:.2f}")
             ttxTudo = contxTudo * vlxTudo
         if quantxEgg > 0:
-            print(f"{contxEgg} - {colors['yellow']}X-EGG{colors['clear']}       UNI R$  {vlxEgg:.2f} - TOT R$ {contxEgg * vlxEgg:.2f}")
+            print(f" {contxEgg} - {colors['yellow']}X-EGG{colors['clear']}        R$  {vlxEgg:.2f}        R$ {contxEgg * vlxEgg:.2f}")
             ttxEgg = contxEgg * vlxEgg
         if quantxSalada > 0:
-            print(f"{contxSalada} - {colors['cyan']}X-SALADA{colors['clear']}    UNI R$  {vlxSalada:.2f} - TOT R$ {contxSalada * vlxSalada:.2f}")
+            print(f" {contxSalada} - {colors['cyan']}X-SALADA{colors['clear']}     R$  {vlxSalada:.2f}        R$ {contxSalada * vlxSalada:.2f}")
             ttxSalada = contxSalada * vlxSalada
         if quantBauru > 0:
-            print(f"{contBauru} - {colors['purple']}BAURÚ{colors['clear']}       UNI R$  {vlBauru:.2f} - TOT R$ {contBauru * vlBauru:.2f}")
+            print(f" {contBauru} - {colors['purple']}BAURÚ{colors['clear']}        R$  {vlBauru:.2f}        R$ {contBauru * vlBauru:.2f}")
             ttBauru = contBauru * vlBauru
         if quantCoca > 0:
-            print(f"{contCoca} - {colors['green']}COCA-COLA{colors['clear']}   UNI R$  {vlCoca:.2f} - TOT R$ {contCoca * vlCoca:.2f}")
+            print(f" {contCoca} - {colors['green']}COCA-COLA{colors['clear']}    R$  {vlCoca:.2f}        R$ {contCoca * vlCoca:.2f}")
             ttCoca = contCoca * vlCoca
         if quantGuarana > 0:
-            print(f"{contGuarana} - {colors['cyan']}GUARANÁ{colors['clear']}     UNI R$  {vlGuarana:.2f} - TOT R$ {contGuarana * vlGuarana:.2f}")
+            print(f" {contGuarana} - {colors['cyan']}GUARANÁ{colors['clear']}      R$  {vlGuarana:.2f}        R$ {contGuarana * vlGuarana:.2f}")
             ttGuarana = contGuarana * vlGuarana
         if quantFanta > 0:
-            print(f"{contFanta} - {colors['yellow']}FANTA{colors['clear']}       UNI R$  {vlFanta:.2f} - TOT R$ {contFanta * vlFanta:.2f}")
+            print(f" {contFanta} - {colors['yellow']}FANTA{colors['clear']}        R$  {vlFanta:.2f}        R$ {contFanta * vlFanta:.2f}")
             ttFanta = contFanta * vlFanta
         if quantTubaina > 0:
-            print(f"{contTubaina} - {colors['purple']}TUBAÍNA{colors['clear']}     UNI R$  {vlTubaina:.2f} - TOT R$ {contTubaina * vlTubaina:.2f}")
+            print(f" {contTubaina} - {colors['purple']}TUBAÍNA{colors['clear']}      R$  {vlTubaina:.2f}        R$ {contTubaina * vlTubaina:.2f}")
             ttTubaina = contTubaina * vlTubaina
     if opc == 3:
         print('=' * 44)
-        vlFinal = print(f'''VALOR A PAGAR: {' ' * 20}R$ {ttxTudo + ttxEgg + ttxSalada + ttBauru + ttCoca + ttGuarana + ttFanta + ttTubaina:.2f}''')
+        vlFinal = print(f'''VALOR A PAGAR: {' ' * 18}R$ {ttxTudo + ttxEgg + ttxSalada + ttBauru + ttCoca + ttGuarana + ttFanta + ttTubaina:.2f}''')
         print('=' * 44)
         print('')
         fin = str(input('''SEU PEDIDO ESTÁ COMPLETO?
