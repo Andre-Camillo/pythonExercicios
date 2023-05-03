@@ -10,7 +10,7 @@ ttxTudo = ttxEgg = ttxSalada = ttBauru = ttCoca = ttGuarana = ttFanta = ttTubain
 opc = 9999
 
 # CADASTRE AQUI O VALOR DOS PRODUTOS:
-vlxTudo = 10
+vlxTudo = 12
 vlxEgg = 9
 vlxSalada = 7
 vlBauru = 5
