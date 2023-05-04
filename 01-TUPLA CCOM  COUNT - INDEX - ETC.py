@@ -7,6 +7,7 @@ print(f'\nVAR A: {a} (S/ ORGANIZAR)\nVAR B: {b} (S/ ORGANIZAR)\nVAR C: {c} (S/ O
 print(f'VAR C: {sorted(c)} ORGANIZADA')
 print(f'COM LEN: {len(c)}')
 if c.count(num) >= 1:
-    print(f'O NÚMERO "{num}" APARECE {c.count(num)} VEZ(ES), NA {c.index(num) + 1}ª POSIÇÃO .')
+    print(f'O NÚMERO "{num}" APARECE {c.count(num)} VEZ(ES), NA {c.index(num) + 1}ª POSIÇÃO.')
 else:
     print(f'O NÚMERO "{num}" NÃO APARECE NENHUMA VEZ.')
+
