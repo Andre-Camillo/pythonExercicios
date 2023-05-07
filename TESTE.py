@@ -1,13 +1,17 @@
-num = (int(input(f'DIGITE UM NÚMERO: ')), int(input(f'DIGITE OUTRO NÚMERO: '))
-        , int(input(f'DIGITE MAIS UM NÚMERO: ')), int(input(f'DIGITE O ÚLTIMO NÚMERO: ')))
-print(f'VOCÊ DIGITOU OS VALORES: {num}')
-if 9 or 3 in num:
-    print(f'O NÚMERO "9" APARECE {num.count(9)} VEZ(ES)')
-    print(f'O NÚMERO "3" APARECE NA POSIÇÃO DE Nº {num.index(3) + 1}.')
-else:
-    print(f'O Nº "9" NÃO FOI DIGITADO.')
-    print(f'O NÚMERO "3" APARECE NA POSIÇÃO DE Nº {num.index(3) + 1}.')
-print('NÚMERO(S) PAR(ES) DIGITADO(S): ', end='')
-for n in num:
-    if n % 2 == 0:
-        print(n, end='  ')
+lista = ('zero', 'um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez', 'onze',
+         'doze', 'treze', 'quatorze', 'quinza', 'dezesseis', 'dezessete', 'dezoito', 'dezenove', 'vinte')
+num = int(input('ESCOLHA UM NÚMERO ENTRE "0" E "20": '))
+while True:
+    if num < 0 or num > 20:
+        num = int(input('VOCÊ DEVE ESCOLHER UM NÚMERO ENTRE "0" E "20": '))
+    else:
+        for c in lista:
+            print(lista[num])
+            break
+        cont = str(input('DESEJA CONTINUAR? [S] ou [N]: ')).upper()
+        if cont not in 'SsNn':
+            num = int(input('VOCÊ DEVE ESCOLHER [S] ou [N]: '))
+        elif cont == 'S':
+            num = int(input('ESCOLHA UM NÚMERO ENTRE "0" E "20": '))
+        else:
+            break
