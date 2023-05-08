@@ -1,17 +1,6 @@
-lista = ('zero', 'um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez', 'onze',
-         'doze', 'treze', 'quatorze', 'quinza', 'dezesseis', 'dezessete', 'dezoito', 'dezenove', 'vinte')
-num = int(input('ESCOLHA UM NÚMERO ENTRE "0" E "20": '))
-while True:
-    if num < 0 or num > 20:
-        num = int(input('VOCÊ DEVE ESCOLHER UM NÚMERO ENTRE "0" E "20": '))
-    else:
-        for c in lista:
-            print(lista[num])
-            break
-        cont = str(input('DESEJA CONTINUAR? [S] ou [N]: ')).upper()
-        if cont not in 'SsNn':
-            num = int(input('VOCÊ DEVE ESCOLHER [S] ou [N]: '))
-        elif cont == 'S':
-            num = int(input('ESCOLHA UM NÚMERO ENTRE "0" E "20": '))
-        else:
-            break
+from random import randint
+num = (randint(1, 10), randint(1, 10), randint(1, 10), randint(1, 10), randint(1, 10))
+print('OS NÚMEROS SORTEADOS FORAM:')
+for pos, c in enumerate(num):
+    print(f'{pos + 1}º NÚMERO: {c}')
+print(f'\nO MAIOR VALOR: {max(num)}\nO MENOR VALOR: {min(num)}')
