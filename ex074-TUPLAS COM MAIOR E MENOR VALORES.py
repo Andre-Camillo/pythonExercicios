@@ -1,7 +1,11 @@
 from random import randint
-num = (randint(1, 10), randint(1, 10), randint(1, 10), randint(1, 10), randint(1, 10))
 maior = menor = 0
-print(f'OS VALORES SORTEADOS FORAM: ', end='')
-for n in num:
-    print(f"{n}", end=' ')
-print(f'\nO MAIOR: {max(num)}\nO MENOR: {min(num)}')
+num = (randint(0, 10), randint(0, 10), randint(0, 10), randint(0, 10), randint(0, 10))
+print('NÚMEROS SORTEADOS:')
+for pos, c in enumerate(num):
+    print(f'{pos + 1}º NÚMERO: {c}')
+print(f'\nO MAIOR: {max(num)}.\nO MENOR: {min(num)}.\n')
+
+numeros = randint(0, 10), randint(0, 10), randint(0, 10), randint(0, 10), randint(0, 10),
+print(f'NÚMEROS SORTEADOS: {numeros}.\nO MAIOR VALOR: {max(numeros)}.\nO MENOR VALOR: {min(numeros)}.')
+
