@@ -2,7 +2,7 @@ from num2words import num2words
 print('SIMULADOR DE CAIXA ELETRÔNICO')
 valor = int(input('INFORME O VALOR DO SAQUE: R$ '))
 num = valor
-ced = 1000
+ced = 100
 totalced = 0
 while True:
     if valor >= ced:
@@ -11,10 +11,10 @@ while True:
     else:
         if totalced > 0:
             print(f'{totalced} CÉDULAS DE R$ {ced:.2f}')
-        if ced == 1000:
-            ced = 500
-        elif ced == 500:
-            ced = 100
+        #if ced == 1000:
+        #    ced = 500
+        #elif ced == 500:
+        #    ced = 100
         elif ced == 100:
             ced = 50
         elif ced == 50:
