@@ -9,3 +9,5 @@ print(f'\nO MAIOR: {max(num)}.\nO MENOR: {min(num)}.\n')
 numeros = randint(0, 10), randint(0, 10), randint(0, 10), randint(0, 10), randint(0, 10),
 print(f'NÚMEROS SORTEADOS: {numeros}.\nO MAIOR VALOR: {max(numeros)}.\nO MENOR VALOR: {min(numeros)}.')
 
+
+
