@@ -1,15 +1,13 @@
 print('O MAIS E O MENOS PESADO DENTRE 5')
-maior = 0
-menor = 0
-for c in range(1, 6):
-    peso = float(input('INFORME O PESO DA {}ª PESSOA: '.format(c)))
-    if peso == 1:
-        maior = c
-        menor = c
+maior = menor = 0
+for p in range(1, 4):
+    peso = float(input(f'INFORME O PESO DA {p}ª PESSOA: '))
+    if p == 1:
+        maior = menor = peso
     else:
         if peso > maior:
             maior = peso
         if peso < menor:
             menor = peso
-print('O MAIOR peso foi de {} Kg.'.format(maior))
-print('O MENOR peso foi de {} Kg.'.format(menor))
+print(f'O MAIOR peso foi de {maior} Kg.')
+print(f'O MENOR peso foi de {menor} Kg.')
