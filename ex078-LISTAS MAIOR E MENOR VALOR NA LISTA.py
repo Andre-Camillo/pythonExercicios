@@ -10,10 +10,7 @@ for c in range(0, 5):
         if val[c] < men:
             men = val[c]
 
-print(f'O MAIOR NO 1º MÉTODO: {max(val)}\nO MAIOR NO 2º MÉTODO: {mai}')
-print(f'O MENOR NO 1º MÉTODO: {min(val)}\nO MENOR NO 2º MÉTODO: {men}')
-print(f'POSIÇÃO(ÇÕES) DO(S) MAIOR(ES) VALOR(ES): ', end='')
-for i, v in enumerate(val):
+for i, v, in enumerate(val):
     if v == mai:
         print(f'{i + 1}...', end='')
 print()
@@ -21,3 +18,7 @@ print(f'POSIÇÃO(ÇÕES) DO(S) MENOR(ES) VALOR(ES): ', end='')
 for i, v in enumerate(val):
     if v == men:
         print(f'{i + 1}...', end='')
+
+print(f'O MAIOR NO 1º MÉTODO: {max(val)}\nO MAIOR NO 2º MÉTODO: {mai}')
+print(f'O MENOR NO 1º MÉTODO: {min(val)}\nO MENOR NO 2º MÉTODO: {men}')
+print(f'POSIÇÃO(ÇÕES) DO(S) MAIOR(ES) VALOR(ES): ', end='')

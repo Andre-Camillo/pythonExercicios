@@ -16,3 +16,12 @@ while True:
 print(f'OS NÚMEROS DIGITADOR FORAM: ', end='')
 for c in sorted(num):
     print(f'{c}', end=' ')
+
+#Ou
+
+print()
+print(f'OS NÚMEROS DIGITADOR FORAM: ', end='')
+num.sort()
+for c in num:
+    print(f'{c}', end=' ')
+

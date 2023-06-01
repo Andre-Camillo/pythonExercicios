@@ -11,7 +11,11 @@ while True:
     else:
         if totalced > 0:
             print(f'{totalced} CÉDULAS DE R$ {ced:.2f}')
-        #if ced == 1000:
+        #elif ced == 10000:
+        #    ced = 5000
+        #elif ced == 5000:
+        #    ced = 1000
+        #elif ced == 1000:
         #    ced = 500
         #elif ced == 500:
         #    ced = 100
@@ -22,7 +26,10 @@ while True:
         elif ced == 20:
             ced = 10
         elif ced == 10:
+            ced = 5
+        elif ced == 5:
             ced = 1
+
         totalced = 0
         if valor == 0:
             break
